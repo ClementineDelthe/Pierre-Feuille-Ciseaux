@@ -1,0 +1,50 @@
+body {
+  font: Arial;
+  text-align: center;
+}
+
+#opponent-choice,
+#your-choice {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  font-size: 90px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #your-choice {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 90px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+} */
+
+#choices {
+  width: 240px;
+  height: 35px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 35px;
+  padding: 10px 20px;
+  background-color: lightgray;
+}
+
+#choices div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
