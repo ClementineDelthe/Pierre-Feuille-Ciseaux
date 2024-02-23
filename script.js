@@ -25,28 +25,28 @@ function selectChoice() {
   document.getElementById("opponent-choice").innerText = opponent;
 
   if ( you == opponent ) {
-    yourScore += 1;
-    opponentScore += 1;
+    yourScore += 0;
+    opponentScore += 0;
   } else {
     if ( you == "🪨" ) {
-      if ( opponent = "✂️" ) {
+      if ( opponent == "✂️" ) {
         yourScore += 1;
-      } else if ( opponent = "🌿") {
+      } else if ( opponent == "🌿") {
+        opponentScore += 1;
+      }
+    }
+    else if ( you == "✂️" ) {
+      if ( opponent == "🌿" ) {
+        yourScore += 1;
+      } else if ( opponent == "🪨") {
         opponentScore += 1;
       }
     }
     else if ( you == "🌿" ) {
-      if ( opponent = "✂️" ) {
-        opponentScore += 1;
-      } else if ( opponent = "🪨") {
+      if ( opponent == "🪨" ) {
         yourScore += 1;
-      }
-    }
-    else if ( you == "✂️" ) {
-      if ( opponent = "🪨" ) {
+      } else if ( opponent == "✂️") {
         opponentScore += 1;
-      } else if ( opponent = "🌿") {
-        yourScore += 1;
       }
     }
   }
